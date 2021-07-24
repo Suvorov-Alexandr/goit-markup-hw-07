@@ -12,25 +12,21 @@
 .footer {
   background-color: var(--dark-background-color);
   padding: 60px 0px;
-}
-
-.footer-logo {
-  color: var(--primary-white-color);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
-  display: block;
+  
+  &-logo {
+    color: var(--primary-white-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    display: block;
+  }
 }
 
 .colortext {
   color: var(--accent-color);
-}
-
-.address-space {
-  margin-right: 70px;
 }
 
 .address {
@@ -40,25 +36,29 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
-}
 
-.address:hover,
-.address:focus{
-  color: var(--footer-address);
-}
+  &:hover,
+  &:focus{
+    color: var(--footer-address);
+  }
 
-.address-contacts {
-  font-style: normal;
-  line-height: 1.71;
-  color: var(--footer-address);
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--cubic);
-}
+  &-space {
+    margin-right: 70px;
+  }
 
-.address-contacts:focus,
-.address-contacts:hover{
-  color: var(--primary-white-color);
+  &-contacts {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--footer-address);
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--cubic);
+
+    &:focus,
+    &:hover{
+      color: var(--primary-white-color);
+    }
+  }
 }
 
 .text{
@@ -92,14 +92,15 @@
   height: 44px;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
-}
 
-.link-social-footer:hover,
-.link-social-footer:focus  {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
 }
 
 .icon-social-footer-list:not(:last-child) {
@@ -129,13 +130,13 @@
   padding: 15px 0px 15px 16px;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.form-inputf::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  }
 }
 
 .form-buttonf {

@@ -66,15 +66,15 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
-}
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
 .link.current::after {
@@ -96,9 +96,9 @@
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--cubic);
-}
-
-.contacts .list:hover,
-.contacts .list:focus{
-  color: var(--accent-color);
+  
+  &:hover,
+  &:focus{
+    color: var(--accent-color);
+  }
 }
