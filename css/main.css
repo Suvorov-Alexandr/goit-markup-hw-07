@@ -11,7 +11,7 @@
   --work-animation-background: rgba(47, 48, 58, 0.8);
   --card-project-anim-background: rgba(33, 150, 243, 0.9);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-duration: 1250ms;
+  --transition-duration: 250ms;
 }
 
 .list {
@@ -225,19 +225,19 @@ body {
 }
 
 /* Section advantages */
-.section-advantages {
+.advantages {
   padding: 94px 0px 47px 0px;
 }
 
-.column {
+.advantages__icon {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.column:nth-child(-n + 3) {
+.advantages__icon:nth-child(-n + 3) {
   margin-right: 30px;
 }
 
-.column::before {
+.advantages__icon::before {
   display: block;
   background-color: var(--secondary-background-color);
   content: "";
@@ -248,23 +248,23 @@ body {
   background-position: center;
 }
 
-.column.icon-antenna::before {
+.advantages__icon.advantages__icon--antenna::before {
   background-image: url("../images/antenna.svg");
 }
 
-.column.icon-clock::before {
+.advantages__icon.advantages__icon--clock::before {
   background-image: url("../images/clock.svg");
 }
 
-.column.icon-diagram::before {
+.advantages__icon.advantages__icon--diagram::before {
   background-image: url("../images/diagram.svg");
 }
 
-.column.icon-astronaut::before {
+.advantages__icon.advantages__icon--astronaut::before {
   background-image: url("../images/astronaut.svg");
 }
 
-.advantages-title {
+.advantages__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -273,24 +273,16 @@ body {
   margin-bottom: 10px;
 }
 
-.advantages-list-title {
+.advantages__discription {
   line-height: 1.71;
 }
 
 /* Work examples */
-.container .cont-work {
-  display: flex;
-  padding: 0px 15px;
-  margin: 0 auto;
-  align-items: center;
-  background-color: var(--background-center);
-}
-
-.section-work {
+.work {
   padding: 47px 0px 94px 0px;
 }
 
-.title-work {
+.work__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -300,16 +292,16 @@ body {
   margin-bottom: 50px;
 }
 
-.indent-between-pictures:nth-child(-n + 2) {
+.work__item:nth-child(-n + 2) {
   margin-right: 30px;
 }
 
-.box-work {
+.work__box {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-work {
+.work__overlay {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -319,12 +311,12 @@ body {
   opacity: 0;
 }
 
-.box-work:hover .overlay-work {
+.work__box:hover .work__overlay {
   transform: translateY(0);
   opacity: 1;
 }
 
-.text-work {
+.work__text {
   display: flex;
   justify-content: center;
   width: 100%;
