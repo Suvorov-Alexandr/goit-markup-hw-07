@@ -1,14 +1,14 @@
 /* Regular clients */
 
-.section-clients {
+.clients {
   padding: 94px 0px;
+
+  &__title {
+    @include title;
+  }
 }
 
-.title-clients {
-  @include title;
-}
-
-.icon-clients-list{
+.clients-icon__item{
   width: 170px;
   
   &:not(:last-child) {
@@ -16,7 +16,7 @@
   }
 }
 
-.link-clients {
+.clients-icon__link {
   text-decoration: none;
   display: flex;
   justify-content: center;
